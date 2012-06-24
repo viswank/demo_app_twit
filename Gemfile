@@ -11,6 +11,11 @@ group :development do
   gem 'sqlite3', '1.3.5'
 end
 
+# KV; tried after rspec was failing
+group :development, :test do
+  gem 'rspec-rails', ">= 2.0.0.beta"
+end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
